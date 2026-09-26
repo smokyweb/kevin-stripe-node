@@ -1,6 +1,6 @@
 {
-  "name": "stripe",
-  "version": "18.3.0",
+  "name": "project",
+  "version": "1.0.0",
   "description": "Stripe API wrapper",
   "keywords": [
     "stripe",
@@ -68,8 +68,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "tsc -p tsconfig.cjs.json && mocha",
-    "prepack": "just install && just build"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "exports": {
     "types": "./types/index.d.ts",
